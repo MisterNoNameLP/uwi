@@ -1,0 +1,86 @@
+[13:26:39][DEBUG][MAIN][ENV_INIT]: Load coreEnv    
+[13:26:39][DEBUG][MAIN][ENV_INIT]: Loading core libs    
+[13:26:39][DEBUG][MAIN][ENV_INIT]: Initialize the environment    
+[13:26:39][DEBUG][MAIN]: Execute core env init    
+[13:26:39][DATA_EXECUTION][MAIN][CORE_ENV_INI]: Prepare executeDir execution: coreEnvInit (core/lua/env/init)    
+[13:26:39][DATA_LOADING][MAIN][CORE_ENV_INI]: Loading dir: core/lua/env/init (coreEnvInit)    
+[13:26:39][DATA_LOADING][MAIN][CORE_ENV_INI]: Successfully loaded files: 13 (coreEnvInit)    
+[13:26:39][DATA_LOADING][MAIN][CORE_ENV_INI]: Loading dir done: core/lua/env/init (coreEnvInit)    
+[13:26:39][DATA_EXECUTION][MAIN][CORE_ENV_INI]: Execute: core/lua/env/init (coreEnvInit)    
+[13:26:39][DEBUG][MAIN][CORE_ENV_INI]: Loading libs    
+[13:26:39][INFO][MAIN][CORE_ENV_INI]: LOAD INI    
+[13:26:39][DEBUG][MAIN][CORE_ENV_INI][SHARED]: Set metatables    
+[13:26:39][INFO][MAIN][CORE_ENV_INI]: Open user DB    
+[13:26:39][DATA_EXECUTION][MAIN][CORE_ENV_INI]: Successfully executed: 13 files (coreEnvInit)    
+[13:26:39][DATA_EXECUTION][MAIN][CORE_ENV_INI]: Executing done: coreEnvInit (core/lua/env/init)    
+[13:26:39][DEBUG][MAIN][CORE_ENV_INI]: Execute API env init    
+[13:26:39][DATA_EXECUTION][MAIN][API_ENV_INI]: Prepare executeDir execution: apiEnvInit (api/env/init)    
+[13:26:39][DATA_LOADING][MAIN][API_ENV_INI]: Loading dir: api/env/init (apiEnvInit)    
+[13:26:39][DATA_LOADING][MAIN][API_ENV_INI]: Successfully loaded files: 0 (apiEnvInit)    
+[13:26:39][DATA_LOADING][MAIN][API_ENV_INI]: Loading dir done: api/env/init (apiEnvInit)    
+[13:26:39][DATA_EXECUTION][MAIN][API_ENV_INI]: Execute: api/env/init (apiEnvInit)    
+[13:26:39][DATA_EXECUTION][MAIN][API_ENV_INI]: Successfully executed: 0 files (apiEnvInit)    
+[13:26:39][DATA_EXECUTION][MAIN][API_ENV_INI]: Executing done: apiEnvInit (api/env/init)    
+[13:26:39][DEBUG][MAIN][CORE_ENV_DYN]: Load dynamic core data    
+[13:26:39][DATA_LOADING][MAIN][CORE_ENV_DYN]: Loading dir: core/lua/env/dyn (coreDyn)    
+[13:26:39][DATA_LOADING][MAIN][CORE_ENV_DYN]: Successfully loaded files: 57 (coreDyn)    
+[13:26:39][DATA_LOADING][MAIN][CORE_ENV_DYN]: Loading dir done: core/lua/env/dyn (coreDyn)    
+[13:26:39][DEBUG][MAIN][API_ENV_DYN]: Load dynamic API data    
+[13:26:39][DATA_LOADING][MAIN][API_ENV_DYN]: Loading dir: api/env/dyn (apiDyn)    
+[13:26:39][DATA_LOADING][MAIN][API_ENV_DYN]: Successfully loaded files: 4 (apiDyn)    
+[13:26:39][DATA_LOADING][MAIN][API_ENV_DYN]: Loading dir done: api/env/dyn (apiDyn)    
+[13:26:39][DEBUG][MAIN][API_COMMANDS]: Load commands    
+[13:26:39][DATA_LOADING][MAIN][API_COMMANDS]: Loading dir: api/commands (commands)    
+[13:26:39][DATA_LOADING][MAIN][API_COMMANDS]: Successfully loaded files: 23 (commands)    
+[13:26:39][DATA_LOADING][MAIN][API_COMMANDS]: Loading dir done: api/commands (commands)    
+[13:26:39][INFO][MAIN]: Start initialization    
+[13:26:39][DEBUG][MAIN][INIT]: Initialize main env    
+[13:26:39][DEBUG][MAIN][INIT]: Initialize terminal    
+[13:26:39][INFO][MAIN][INIT]: Initialize core    
+[13:26:39][DATA_EXECUTION][MAIN][INIT]: Prepare executeDir execution: INIT_SYSTEM (core/lua/core/init)    
+[13:26:39][DATA_LOADING][MAIN][INIT]: Loading dir: core/lua/core/init (INIT_SYSTEM)    
+[13:26:39][DATA_LOADING][MAIN][INIT]: Successfully loaded files: 6 (INIT_SYSTEM)    
+[13:26:39][DATA_LOADING][MAIN][INIT]: Loading dir done: core/lua/core/init (INIT_SYSTEM)    
+[13:26:39][DATA_EXECUTION][MAIN][INIT]: Execute: core/lua/core/init (INIT_SYSTEM)    
+[13:26:39][DEBUG][MAIN][INIT]: Starting event manager    
+[13:26:39][DEBUG][MAIN][INIT]: Starting sharing manager    
+[13:26:39][DEBUG][MAIN][INIT]: Starting event manager    
+[13:26:39][DEBUG][MAIN][INIT]: Starting event listener    
+[13:26:39][DEBUG][MAIN][INIT][DB]: Prepare login DB    
+[13:26:39][DEBUG][MAIN][INIT][DB]: Create sysinfo table: 1    
+[13:26:39][DEBUG][MAIN][INIT][DB]: Create users table: 1    
+[13:26:39][DEBUG][MAIN][INIT][DB]: Create permissions table: 1    
+[13:26:39][DEBUG][MAIN][INIT][DB]: Create sessions table: 1    
+[13:26:39][DEBUG][MAIN][INIT][DB]: Prepare sysinfo table: 0    
+[13:26:39][INFO][MAIN][INIT][USERLOGIN]: Initialize user login env    
+[13:26:39][INFO][MAIN][INIT][DB]: Prepare data DB    
+[13:26:39][INFO][MAIN][INIT][DB]: Create data table: 1    
+[13:26:39][DATA_EXECUTION][MAIN][INIT]: Successfully executed: 6 files (INIT_SYSTEM)    
+[13:26:39][DATA_EXECUTION][MAIN][INIT]: Executing done: INIT_SYSTEM (core/lua/core/init)    
+[13:26:39][INFO][MAIN][INIT]: Initialize api    
+[13:26:39][DATA_EXECUTION][MAIN][INIT]: Prepare executeDir execution: INIT_USER (api/init)    
+[13:26:39][DATA_LOADING][MAIN][INIT]: Loading dir: api/init (INIT_USER)    
+[13:26:39][DATA_LOADING][MAIN][INIT]: Successfully loaded files: 1 (INIT_USER)    
+[13:26:39][DATA_LOADING][MAIN][INIT]: Loading dir done: api/init (INIT_USER)    
+[13:26:39][DATA_EXECUTION][MAIN][INIT]: Execute: api/init (INIT_USER)    
+[13:26:39][DATA_EXECUTION][MAIN][INIT]: Successfully executed: 1 files (INIT_USER)    
+[13:26:39][DATA_EXECUTION][MAIN][INIT]: Executing done: INIT_USER (api/init)    
+[13:26:39][INFO][MAIN][INIT]: Initialization done    
+[13:26:39][INFO][SHARING_MANAGER]: Starting sharing manager  	  
+[13:26:39][INFO][THREAD_MANAGER]: Starting thread manager  	  
+[13:26:39][INFO][EVENT_LISTENER]: Starting event listener  	  
+[13:26:39][INFO][EVENT_LISTENER]: Register all listeners  	  
+[13:26:39][INFO][EVENT_LISTENER]: Listeners registration done  	  
+[13:26:39][INFO][EVENT_MANAGER]: Starting event manager  	  
+[13:26:39][INFO][HTTPServer]: Initialize HTTP server  	  
+[13:26:39][INFO][HTTPServer]: No TLS certificate given. Falling back to self-signed certificate.  	  
+[13:26:39][INFO][HTTPServer]: Create server object  	  
+[13:26:39][INFO][HTTPServer]: Set server to listen  	  
+[13:26:39][INFO][HTTPServer]: Set event listeners  	  
+[13:26:39][INFO][HTTPServer]: Now listening on port 8023  	  
+[13:26:39][INFO][HTTPServer]: HTTP server initialization done  	  
+[13:26:40][INFO][HTTPServer]: Got user request: connectionIP/realIP: 127.0.0.1/127.0.0.1  	  
+[13:26:40][INFO][ACTION][YoutubeDL]: Register download  	  
+[13:27:28][INFO][HTTPServer]: Got user request: connectionIP/realIP: 127.0.0.1/127.0.0.1  	  
+[13:27:28][INFO][ACTION][YoutubeDL]: Register download  	  
+[13:27:28][WARN][ACTION][YoutubeDL]: _DB lock feature not implemented yet!  	  
