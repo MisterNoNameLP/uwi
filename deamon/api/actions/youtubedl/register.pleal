@@ -1,0 +1,39 @@
+debug.setFuncPrefix("[YoutubeDL]")
+--===== permission check =====--
+local session, user = _I.loginRequired(requestData)
+if session == false then
+	log("Anonymous user tryed to register a download")
+	return _I.returnError(response, 1, "Not logged in")
+end
+if not user:getPermission("youtubedl") then
+	log("User with insuficent permission tryed to register a download: userID: " .. tostring(user:getID()))
+	return _I.returnError(response, 2, "Insuficent permission")
+end 
+local userID = user:getID()
+
+--===== script start =====--
+log("Register download for user $userID")
+
+local downloadID
+
+_E.youtubedl.registerUser(user)
+
+if type(request.url) ~= "string" then
+	log("Invalid URL given: $request.url, userID: $userID")
+	return _I.returnError(response, nil, "Invalid URL")
+elseif type(request.interval) ~= "number" then
+	log("Invalid interval given: $request.interval, userID: $userID")
+	return _I.returnError(response, nil, "Invalid interval")
+end
+
+downloadID = _DB.youtubedl.downloads.registered("insert", {
+	userID = userID,
+	url = request.url,
+	interval = request.interval,
+	log = {},
+})
+_DB.youtubedl.users[userID].downloads[downloadID] = true
+
+log("Download registered: userID: $userID, URL: $request.url, interval: $request.interval")
+
+response.success = true

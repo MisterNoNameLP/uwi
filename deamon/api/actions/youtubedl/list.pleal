@@ -1,0 +1,32 @@
+debug.setFuncPrefix("[YoutubeDL]")
+--===== permission check =====--
+local session, user = _I.loginRequired(requestData)
+if session == false then
+	log("Anonymous user tryed to list a downloads")
+	return _I.returnError(response, 1, "Not logged in")
+end
+if not user:getPermission("youtubedl") then
+	log("User with insuficent permission tryed to list downloads: userID: " .. tostring(user:getID()))
+	return _I.returnError(response, 2, "Insuficent permission")
+end 
+local userID = user:getID()
+
+--===== script start =====--
+log("List downloads for user $userID")
+
+_E.youtubedl.registerUser(user)
+
+response.downloadList = {}
+
+for id in pairs(_DB.youtubedl.users[userID].downloads("get")) do
+	local downloadInfo = {}
+	local fullDownloadInfo = _DB.youtubedl.downloads.registered[id]("get")
+	downloadInfo.url = fullDownloadInfo.url
+	downloadInfo.interval = fullDownloadInfo.interval
+	if request.verbose then
+		downloadInfo.log = fullDownloadInfo.log
+	end
+	table.insert(response.downloadList, downloadInfo)
+end
+
+response.success = true

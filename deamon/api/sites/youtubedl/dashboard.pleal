@@ -3,15 +3,69 @@ if session == false then
    return user
 end
 
+local _, registeredDownloads = _I.execAction({action = "youtubedl/list", verbose = true}, requestData)
+
 local body = _I.html.Body.new()
 body:addRaw(_E.css.defaultStyle)
 
 body:addRaw([[<div>]])
 body:addHeader(1, "YoutubeDL")
 
-body:addRefButton("Scheduled downloads", "listDownloads")
-body:addP("")
+body:addHead([[
+<style>
 
-body:addRaw([[</div>]])
+	p{
+		display: inline;
+	}
+	br {
+		display: block;
+		margin: 2px 0;
+	}
+	h1 {
+		display: block;
+		margin: 5px 0;
+		text-align: center;
+	}
+	h2 {
+		display: block;
+		margin: 5px 0;
+		text-align: center;
+	}
+	h3 {
+		display: block;
+		margin: 5px 0;
+		text-align: center;
+	}
+
+	div.container {
+		display: flex;
+		justify-content: center;
+	}
+
+	.token {
+		width: 90%;
+		text-align: center;
+		border: 3px solid black;
+		line-height: 130%;
+		padding-left: 5px;
+		padding-right: 5px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+
+</style>
+]])
+
+body:addHeader(2, "Registered downloads")
+for id, downloadInfo in pairs(registeredDownloads) do
+	body:addRaw([[
+<div>
+	<form action="", method="POST">
+		beeeeeeenis
+	</form>
+</div>
+	]])
+end
+
 
 return body:generateCode()

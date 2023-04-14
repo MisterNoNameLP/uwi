@@ -8,18 +8,11 @@ local client = require("DamsClient").new({
 })
 
 local suc, headers, response = client:request({
-	action = "youtubedl/registerDownload",
+	action = "youtubedl/remove",
 	token = "hdB5MaLdqlQ7lBJK\$s5IE6L3cagZOl8m9q8NNnD7aJVOzDKJ9",
-	url = "TEST_URI",
-	interval = 10,
+	--token = "ebxuFFbJ56VzMJRh\$mHPqunj20DLZjqo1IMQadPB2vx6AnSso",
+	downloadID = 4,
 }, {})
-
-for c = 1, 0 do
-	local suc, headers, response = client:request({
-		action = action,
-		value = "TEST",
-	}, {})
-end
 
 print("\nSUC")
 print(suc)

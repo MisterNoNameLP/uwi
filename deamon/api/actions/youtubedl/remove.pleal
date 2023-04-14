@@ -1,0 +1,36 @@
+debug.setFuncPrefix("[YoutubeDL]")
+--===== permission check =====--
+local session, user = _I.loginRequired(requestData)
+if session == false then
+	log("Anonymous user tryed to remove a download")
+	return _I.returnError(response, 1, "Not logged in")
+end
+if not user:getPermission("youtubedl") then
+	log("User with insuficent permission tryed to remove a download: userID: " .. tostring(user:getID()))
+	return _I.returnError(response, 2, "Insuficent permission")
+end 
+local userID = user:getID()
+
+--===== script start =====--
+log("Remove download for user $userID")
+
+local downloadID
+
+_E.youtubedl.registerUser(user)
+
+if type(request.downloadID) ~= "number" then
+	log("Invalid download removal ID: $request.downloadID, userID: $userID")
+	return _I.returnError(response, nil, "Invalid downloadID")
+end
+
+if not _DB.youtubedl.users[userID].downloads[request.downloadID] then
+	log("No download registered for that user: downloadID: $request.downloadID, userID: $userID")
+	return _I.returnError(response, nil, "No download with given ID registered")
+end
+
+_DB.youtubedl.users[userID].downloads[request.downloadID] = nil
+_DB.youtubedl.downloads.registered[request.downloadID] = nil
+
+log("Download removed: userID: $userID, downloadID: $request.downloadID")
+
+response.success = true
