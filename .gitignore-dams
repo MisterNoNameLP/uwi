@@ -1,0 +1,30 @@
+### files ###
+*.key
+*.pkey
+*.pass
+*.sqlite3
+testStart.sh
+
+test
+wiki
+
+deamon/core/clibs_src
+deamon/core/lua/test
+
+### keep folder structure ###
+deamon/logs/*
+!deamon/logs/.gitkeep
+
+deamon/core/os/*
+!deamon/core/os/.gitkeep
+
+deamon/api/actions/*
+!deamon/api/actions/.gitkeep
+deamon/api/init/*
+!deamon/api/init/.gitkeep
+deamon/api/onReload/*
+!deamon/api/onReload/.gitkeep
+deamon/api/actions/*
+!deamon/api/actions/.gitkeep
+deamon/api/sites/*
+!deamon/api/sites/.gitkeep
