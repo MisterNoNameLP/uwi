@@ -1,5 +1,7 @@
 local db = _M._DB
 
+log("######################################")
+
 if db.youtubedl ~= nil then
 	return true
 end
@@ -7,8 +9,30 @@ end
 db.youtubedl = {
 	users = {},
 	downloads = {
-		registered = {},
-		scheduled = {},
-		running = {},
+		registered = {}, --[[
+			contains all registered downloads.
+			{
+				[DOWNLOAD_ID] = {
+					url = "DOWNLOAD_URL",
+					userID = USER_ID,
+					interval = INTERVAL_IN_DAYS,
+					*currentScheduleDay = CURRENT_DAY_IT_IS_SCHEDULED_AT,
+				}
+			}
+		]]
+		scheduled = {}, --[[
+			contains all scheduled downloads.
+			{
+				[SCHEDULE_DAY] = {
+					[DOWNLOAD_ID] = true,
+				}
+			}
+		]]
+		lastDownloadDay = _M._E.getDay(), --last day scheduled downloads are processed.
+		queued = {}, --[[
+			contains all queued downloads. the downloads can be scheduled as well as manually triggered ones. 
+			this table is used to enshure all queued downloads are processed, even if a system falue or shutdown occures.
+		]]
 	},
 }
+

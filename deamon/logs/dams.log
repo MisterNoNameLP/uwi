@@ -1,845 +1,526 @@
-[15:02:17][DEBUG][MAIN][ENV_INIT]: Load coreEnv    
-[15:02:17][DEBUG][MAIN][ENV_INIT]: Loading core libs    
-[15:02:17][DEBUG][MAIN][ENV_INIT]: Initialize the environment    
-[15:02:17][DEBUG][MAIN]: Execute core env init    
-[15:02:17][DATA_EXECUTION][MAIN][CORE_ENV_INI]: Prepare executeDir execution: coreEnvInit (core/lua/env/init)    
-[15:02:17][DATA_LOADING][MAIN][CORE_ENV_INI]: Loading dir: core/lua/env/init (coreEnvInit)    
-[15:02:17][DATA_LOADING][MAIN][CORE_ENV_INI]: Successfully loaded files: 13 (coreEnvInit)    
-[15:02:17][DATA_LOADING][MAIN][CORE_ENV_INI]: Loading dir done: core/lua/env/init (coreEnvInit)    
-[15:02:17][DATA_EXECUTION][MAIN][CORE_ENV_INI]: Execute: core/lua/env/init (coreEnvInit)    
-[15:02:17][DEBUG][MAIN][CORE_ENV_INI]: Loading libs    
-[15:02:17][INFO][MAIN][CORE_ENV_INI]: LOAD INI    
-[15:02:17][DEBUG][MAIN][CORE_ENV_INI][SHARED]: Set metatables    
-[15:02:17][INFO][MAIN][CORE_ENV_INI]: Open user DB    
-[15:02:17][DATA_EXECUTION][MAIN][CORE_ENV_INI]: Successfully executed: 13 files (coreEnvInit)    
-[15:02:17][DATA_EXECUTION][MAIN][CORE_ENV_INI]: Executing done: coreEnvInit (core/lua/env/init)    
-[15:02:17][DEBUG][MAIN][CORE_ENV_INI]: Execute API env init    
-[15:02:17][DATA_EXECUTION][MAIN][API_ENV_INI]: Prepare executeDir execution: apiEnvInit (api/env/init)    
-[15:02:17][DATA_LOADING][MAIN][API_ENV_INI]: Loading dir: api/env/init (apiEnvInit)    
-[15:02:17][DATA_LOADING][MAIN][API_ENV_INI]: Successfully loaded files: 0 (apiEnvInit)    
-[15:02:17][DATA_LOADING][MAIN][API_ENV_INI]: Loading dir done: api/env/init (apiEnvInit)    
-[15:02:17][DATA_EXECUTION][MAIN][API_ENV_INI]: Execute: api/env/init (apiEnvInit)    
-[15:02:17][DATA_EXECUTION][MAIN][API_ENV_INI]: Successfully executed: 0 files (apiEnvInit)    
-[15:02:17][DATA_EXECUTION][MAIN][API_ENV_INI]: Executing done: apiEnvInit (api/env/init)    
-[15:02:17][DEBUG][MAIN][CORE_ENV_DYN]: Load dynamic core data    
-[15:02:17][DATA_LOADING][MAIN][CORE_ENV_DYN]: Loading dir: core/lua/env/dyn (coreDyn)    
-[15:02:17][DATA_LOADING][MAIN][CORE_ENV_DYN]: Successfully loaded files: 57 (coreDyn)    
-[15:02:17][DATA_LOADING][MAIN][CORE_ENV_DYN]: Loading dir done: core/lua/env/dyn (coreDyn)    
-[15:02:17][DEBUG][MAIN][API_ENV_DYN]: Load dynamic API data    
-[15:02:17][DATA_LOADING][MAIN][API_ENV_DYN]: Loading dir: api/env/dyn (apiDyn)    
-[15:02:17][DATA_LOADING][MAIN][API_ENV_DYN]: Successfully loaded files: 4 (apiDyn)    
-[15:02:17][DATA_LOADING][MAIN][API_ENV_DYN]: Loading dir done: api/env/dyn (apiDyn)    
-[15:02:17][DEBUG][MAIN][API_COMMANDS]: Load commands    
-[15:02:17][DATA_LOADING][MAIN][API_COMMANDS]: Loading dir: api/commands (commands)    
-[15:02:17][DATA_LOADING][MAIN][API_COMMANDS]: Successfully loaded files: 23 (commands)    
-[15:02:17][DATA_LOADING][MAIN][API_COMMANDS]: Loading dir done: api/commands (commands)    
-[15:02:17][INFO][MAIN]: Start initialization    
-[15:02:17][DEBUG][MAIN][INIT]: Initialize main env    
-[15:02:17][DEBUG][MAIN][INIT]: Initialize terminal    
-[15:02:17][INFO][MAIN][INIT]: Initialize core    
-[15:02:17][DATA_EXECUTION][MAIN][INIT]: Prepare executeDir execution: INIT_SYSTEM (core/lua/core/init)    
-[15:02:17][DATA_LOADING][MAIN][INIT]: Loading dir: core/lua/core/init (INIT_SYSTEM)    
-[15:02:17][DATA_LOADING][MAIN][INIT]: Successfully loaded files: 6 (INIT_SYSTEM)    
-[15:02:17][DATA_LOADING][MAIN][INIT]: Loading dir done: core/lua/core/init (INIT_SYSTEM)    
-[15:02:17][DATA_EXECUTION][MAIN][INIT]: Execute: core/lua/core/init (INIT_SYSTEM)    
-[15:02:17][DEBUG][MAIN][INIT]: Starting event manager    
-[15:02:17][DEBUG][MAIN][INIT]: Starting sharing manager    
-[15:02:17][DEBUG][MAIN][INIT]: Starting event manager    
-[15:02:17][DEBUG][MAIN][INIT]: Starting event listener    
-[15:02:17][INFO][MAIN][INIT][USERLOGIN]: Initialize user login env    
-[15:02:17][DEBUG][MAIN][INIT][DB]: Prepare login DB    
-[15:02:17][DEBUG][MAIN][INIT][DB]: Create sysinfo table: 1    
-[15:02:17][DEBUG][MAIN][INIT][DB]: Create users table: 1    
-[15:02:17][DEBUG][MAIN][INIT][DB]: Create permissions table: 1    
-[15:02:17][DEBUG][MAIN][INIT][DB]: Create sessions table: 1    
-[15:02:17][DEBUG][MAIN][INIT][DB]: Prepare sysinfo table: 0    
-[15:02:17][INFO][MAIN][INIT][DB]: Prepare data DB    
-[15:02:17][INFO][MAIN][INIT][DB]: Create data table: 1    
-[15:02:17][DATA_EXECUTION][MAIN][INIT]: Successfully executed: 6 files (INIT_SYSTEM)    
-[15:02:17][DATA_EXECUTION][MAIN][INIT]: Executing done: INIT_SYSTEM (core/lua/core/init)    
-[15:02:17][INFO][MAIN][INIT]: Initialize api    
-[15:02:17][DATA_EXECUTION][MAIN][INIT]: Prepare executeDir execution: INIT_USER (api/init)    
-[15:02:17][DATA_LOADING][MAIN][INIT]: Loading dir: api/init (INIT_USER)    
-[15:02:17][DATA_LOADING][MAIN][INIT]: Successfully loaded files: 2 (INIT_USER)    
-[15:02:17][DATA_LOADING][MAIN][INIT]: Loading dir done: api/init (INIT_USER)    
-[15:02:17][DATA_EXECUTION][MAIN][INIT]: Execute: api/init (INIT_USER)    
-[15:02:17][DATA_EXECUTION][MAIN][INIT]: Successfully executed: 2 files (INIT_USER)    
-[15:02:17][DATA_EXECUTION][MAIN][INIT]: Executing done: INIT_USER (api/init)    
-[15:02:17][INFO][MAIN][INIT]: Initialization done    
-[15:02:17][INFO][EVENT_LISTENER]: Starting event listener  	  
-[15:02:17][INFO][EVENT_LISTENER]: Register all listeners  	  
-[15:02:17][INFO][EVENT_LISTENER]: Listeners registration done  	  
-[15:02:17][INFO][HTTPServer]: Initialize HTTP server  	  
-[15:02:17][INFO][EVENT_MANAGER]: Starting event manager  	  
-[15:02:17][INFO][SHARING_MANAGER]: Starting sharing manager  	  
-[15:02:17][INFO][THREAD_MANAGER]: Starting thread manager  	  
-[15:02:17][INFO][HTTPServer]: No TLS certificate given. Falling back to self-signed certificate.  	  
-[15:02:17][INFO][HTTPServer]: Create server object  	  
-[15:02:17][INFO][HTTPServer]: Set server to listen  	  
-[15:02:17][INFO][HTTPServer]: Set event listeners  	  
-[15:02:17][INFO][HTTPServer]: Now listening on port 8023  	  
-[15:02:17][INFO][HTTPServer]: HTTP server initialization done  	  
-[15:02:18][MAIN_TERMINAL]: > lua    
-[15:02:18][MAIN_TERMINAL]: true    
-[15:02:20][LUA]: > _M    
-[15:02:20][LUA]: {
-  ['_E'] = {
-    ['css'] = {
-      ['defaultStyle'] = "<style>
-	div {
-		margin: 5px 0;
-		text-align: center;
-	}
-</style>
-",
-    },
-    ['youtubedl'] = {
-      ['registerUser'] = "function: 0x7f806a266a40",
-    },
-    ['test'] = "function: 0x7f806a27bf90",
-    ['dynDup'] = "API",
-  },
-  ['_I'] = {
-    ['terminal'] = {
-      ['input'] = "function: 0x7f806a29a200",
-      ['autoComp'] = "function: 0x7f806a29a278",
-      ['setTerminal'] = "function: 0x7f806a299fa0",
-      ['terminal'] = {
-        ['print'] = "function: 0x7f806a299c58",
-        ['update'] = "function: 0x7f806a299e40",
-        ['draw'] = "function: 0x7f806a299fd8",
-      },
-      ['currentTerminalPrefix'] = "[LUA]",
-      ['currentTerminal'] = {
-        ['input'] = "function: 0x7f806c688018",
-        ['autoComp'] = "function: 0x7f806c6880c0",
-      },
-      ['getTerminal'] = "function: 0x7f806a29a100",
-    },
-    ['dynDup'] = "CORE",
-    ['mail'] = "function: 0x7f8068f4a968",
-    ['userScripts'] = {
-    },
-    ['thread'] = {
-      ['newChannel'] = "function: 0x7f806c6980e0",
-      ['getChannel'] = "function: 0x7f806c693188",
-      ['newThread'] = "function: 0x7f806c692a38",
-    },
-    ['initData'] = {
-      ['name'] = "[MAIN]",
-      ['mainThread'] = true,
-      ['logfile'] = "file (0x564b8e2b7640)",
-      ['damsVersion'] = "1.0-prerelease-45",
-      ['id'] = 0,
-    },
-    ['args'] = {
-    },
-    ['appendIndex'] = "function: 0x7f806a2acd90",
-    ['mainThread'] = true,
-    ['getSessionByRequestData'] = "function: 0x7f806a256a50",
-    ['damsVersion'] = "1.0-prerelease-45",
-    ['commands'] = {
-      ['dumpuserdb'] = "function: 0x7f8068f2f5e0",
-      ['exit'] = "function: 0x7f806a27dec8",
-      ['dumpSharedTable'] = "function: 0x7f806a1211f0",
-      ['ddb'] = "function: 0x7f806a2d18c8",
-      ['test3'] = "function: 0x7f806a290648",
-      ['mainTerminal'] = "function: 0x7f806a23f100",
-      ['adduser'] = "function: 0x7f806a2c9b68",
-      ['dumpSharingLockTable'] = "function: 0x7f806a121048",
-      ['testArgs'] = "function: 0x7f806a294360",
-      ['rlenv'] = "function: 0x7f806a23f418",
-      ['run'] = "function: 0x7f806a2dec68",
-      ['corr'] = "function: 0x7f8068f33c20",
-      ['lua'] = "function: 0x7f8068f30338",
-      ['testChannelMemUsage'] = "function: 0x7f806a294218",
-      ['dst'] = "function: 0x7f806a2d1750",
-      ['dumpdatadb'] = "function: 0x7f806a2e2580",
-      ['dumpSiteCode'] = "function: 0x7f806a13e150",
-      ['sysinfo'] = "function: 0x7f8068f40ac0",
-      ['crashTest'] = "function: 0x7f806a248c50",
-      ['test2'] = "function: 0x7f806a130278",
-      ['unlock'] = "function: 0x7f806a247498",
-      ['test'] = "function: 0x7f806a296be0",
-      ['st'] = "function: 0x7f8068f4d400",
-    },
-    ['event'] = {
-      ['pull'] = "function: 0x7f806a2ad0e8",
-      ['push'] = "function: 0x7f806a2a8130",
-      ['ignoreAll'] = "function: 0x7f806a2ac5a0",
-      ['ignore'] = "function: 0x7f806a2b59b0",
-      ['listen'] = "function: 0x7f806c698e80",
-    },
-    ['verifyPasswd'] = "function: 0x7f806c6a2910",
-    ['sqlite'] = {
-      ['FULL'] = 13,
-      ['CANTOPEN'] = 14,
-      ['PROTOCOL'] = 15,
-      ['EMPTY'] = 16,
-      ['SCHEMA'] = 17,
-      ['version'] = "function: 0x7f806a23ca68",
-      ['CONSTRAINT'] = 19,
-      ['MISMATCH'] = 20,
-      ['MISUSE'] = 21,
-      ['NOLFS'] = 22,
-      ['FORMAT'] = 24,
-      ['NOTADB'] = 26,
-      ['RANGE'] = 25,
-      ['ROW'] = 100,
-      ['DONE'] = 101,
-      ['INTEGER'] = 1,
-      ['FLOAT'] = 2,
-      ['TEXT'] = 3,
-      ['BLOB'] = 4,
-      ['NULL'] = 5,
-      ['CREATE_INDEX'] = 1,
-      ['CREATE_TABLE'] = 2,
-      ['CREATE_TEMP_INDEX'] = 3,
-      ['CREATE_TEMP_TABLE'] = 4,
-      ['CREATE_TEMP_TRIGGER'] = 5,
-      ['CREATE_TEMP_VIEW'] = 6,
-      ['CREATE_TRIGGER'] = 7,
-      ['CREATE_VIEW'] = 8,
-      ['DELETE'] = 9,
-      ['DROP_INDEX'] = 10,
-      ['DROP_TABLE'] = 11,
-      ['DROP_TEMP_INDEX'] = 12,
-      ['DROP_TEMP_TABLE'] = 13,
-      ['DROP_TEMP_TRIGGER'] = 14,
-      ['DROP_TEMP_VIEW'] = 15,
-      ['DROP_TRIGGER'] = 16,
-      ['DROP_VIEW'] = 17,
-      ['INSERT'] = 18,
-      ['PRAGMA'] = 19,
-      ['READ'] = 20,
-      ['SELECT'] = 21,
-      ['TRANSACTION'] = 22,
-      ['UPDATE'] = 23,
-      ['OK'] = 0,
-      ['__newindex'] = "function: 0x7f806a23cce0",
-      ['open'] = "function: 0x7f806a23cb70",
-      ['OPEN_PRIVATECACHE'] = 262144,
-      ['OPEN_SHAREDCACHE'] = 131072,
-      ['OPEN_FULLMUTEX'] = 65536,
-      ['OPEN_NOMUTEX'] = 32768,
-      ['OPEN_MEMORY'] = 128,
-      ['OPEN_URI'] = 64,
-      ['OPEN_CREATE'] = 4,
-      ['OPEN_READWRITE'] = 2,
-      ['TOOBIG'] = 18,
-      ['ATTACH'] = 24,
-      ['DETACH'] = 25,
-      ['ALTER_TABLE'] = 26,
-      ['REINDEX'] = 27,
-      ['ANALYZE'] = 28,
-      ['CREATE_VTABLE'] = 29,
-      ['DROP_VTABLE'] = 30,
-      ['FUNCTION'] = 31,
-      ['SAVEPOINT'] = 32,
-      ['OPEN_READONLY'] = 1,
-      ['lversion'] = "function: 0x7f806a23ca30",
-      ['complete'] = "function: 0x7f806a23cad0",
-      ['temp_directory'] = "function: 0x7f806a23cb38",
-      ['open_memory'] = "function: 0x7f806a23cbd8",
-      ['open_ptr'] = "function: 0x7f806a23cc40",
-      ['backup_init'] = "function: 0x7f806a23cca8",
-      ['ERROR'] = 1,
-      ['INTERNAL'] = 2,
-      ['PERM'] = 3,
-      ['ABORT'] = 4,
-      ['BUSY'] = 5,
-      ['LOCKED'] = 6,
-      ['NOMEM'] = 7,
-      ['READONLY'] = 8,
-      ['INTERRUPT'] = 9,
-      ['IOERR'] = 10,
-      ['CORRUPT'] = 11,
-      ['NOTFOUND'] = 12,
-    },
-    ['timer'] = {
-      ['getTime'] = "function: 0x7f806c6a49f0",
-      ['getDelta'] = "function: 0x7f806c6a4790",
-      ['getFPS'] = "function: 0x7f806c6a47f8",
-      ['getAverageDelta'] = "function: 0x7f806c6a4758",
-      ['step'] = "function: 0x7f806c6a4720",
-      ['sleep'] = "function: 0x7f806c6a48f0",
-    },
-    ['tostring'] = "function: 0x7f806a2ad008",
-    ['threadIsRunning'] = "function: 0x7f806a257988",
-    ['stopProgram'] = "function: 0x7f806a259f98",
-    ['serialization'] = {
-      ['_COPYRIGHT'] = "Paul Kulchenko",
-      ['_DESCRIPTION'] = "Lua serializer and pretty printer",
-      ['_NAME'] = "serpent",
-      ['_VERSION'] = "0.302",
-      ['serialize'] = "function: 0x7f806a265aa0",
-      ['line'] = "function: 0x7f806a26d3d8",
-      ['block'] = "function: 0x7f806a26d418",
-      ['dump'] = "function: 0x7f806a2646f0",
-      ['load'] = "function: 0x7f806a26d278",
-    },
-    ['debug'] = {
-      ['dataLoadingLog'] = "function: 0x7f806a2a90f0",
-      ['silenceMode'] = false,
-      ['currentColors'] = "[38;5;250m",
-      ['dataExecutionLog'] = "function: 0x7f806a2a9220",
-      ['lowDataExecutionLog'] = "function: 0x7f806a2a92f0",
-      ['getSilenceMode'] = "function: 0x7f806a2a8640",
-      ['ulog'] = "function: 0x7f806a2a9350",
-      ['setDebugPrefix'] = "function: 0x7f806a2a8720",
-      ['dataDBLog'] = "function: 0x7f806a2a9380",
-      ['getFuncPrefix'] = "function: 0x7f806a2a8758",
-      ['setSilenceMode'] = "function: 0x7f806a2a86b0",
-      ['debug'] = {
-        ['gethook'] = "function: builtin#140",
-        ['traceback'] = "function: builtin#142",
-        ['getmetatable'] = "function: builtin#128",
-        ['setmetatable'] = "function: builtin#129",
-        ['getfenv'] = "function: builtin#130",
-        ['setfenv'] = "function: builtin#131",
-        ['dump'] = "function: 0x7f806a2c0470",
-        ['tostring'] = "function: 0x7f806a2ad008",
-        ['debug'] = "function: builtin#141",
-        ['getregistry'] = "function: builtin#127",
-        ['getinfo'] = "function: builtin#132",
-        ['getlocal'] = "function: builtin#133",
-        ['setlocal'] = "function: builtin#134",
-        ['getupvalue'] = "function: builtin#135",
-        ['setupvalue'] = "function: builtin#136",
-        ['upvalueid'] = "function: builtin#137",
-        ['upvaluejoin'] = "function: builtin#138",
-        ['sethook'] = "function: builtin#139",
-      },
-      ['getLogPrefix'] = "function: 0x7f806a2a88c0",
-      ['warn'] = "function: 0x7f806a2a8bd8",
-      ['setColors'] = "function: 0x7f806a2a8970",
-      ['crucial'] = "function: 0x7f806a2a8c80",
-      ['setLogPrefix'] = "function: 0x7f806a2a88f8",
-      ['fatal'] = "function: 0x7f806a2a8d18",
-      ['dlog'] = "function: 0x7f806a2a8e38",
-      ['plog'] = "function: 0x7f806b118770",
-      ['sharingDebug'] = "function: 0x7f806a2a8fd0",
-      ['logfile'] = "file (0x564b8e2b7640)",
-      ['exec'] = "function: 0x7f806a2a9320",
-      ['ldlog'] = "function: 0x7f806a2a8f40",
-      ['getDebugPrefix'] = "function: 0x7f806a2a86e8",
-      ['tdlog'] = "function: 0x7f806a2a8f70",
-      ['setFuncPrefix'] = "function: 0x7f806a2a8810",
-      ['edlog'] = "function: 0x7f806a2a8f08",
-      ['err'] = "function: 0x7f806a2a8c28",
-      ['ledlog'] = "function: 0x7f806a2a8fa0",
-      ['log'] = "function: 0x7f806a2a8b18",
-      ['plealTranspilingLog'] = "function: 0x7f806a2a9060",
-      ['sharingThreadLog'] = "function: 0x7f806a2a9000",
-      ['lowDataLoadingLog'] = "function: 0x7f806a2a91c0",
-      ['requireLog'] = "function: 0x7f806a2a9030",
-      ['orgDebug'] = "table: 0x7f806c68e690",
-      ['global'] = {
-        ['dlog'] = "function: 0x7f806a2a8e38",
-        ['tdlog'] = "function: 0x7f806a2a8f70",
-        ['edlog'] = "function: 0x7f806a2a8f08",
-        ['ledlog'] = "function: 0x7f806a2a8fa0",
-        ['fatal'] = "function: 0x7f806a2a8d18",
-        ['log'] = "function: 0x7f806a2a8b18",
-        ['warn'] = "function: 0x7f806a2a8bd8",
-        ['plog'] = "function: 0x7f806b118770",
-        ['err'] = "function: 0x7f806a2a8c28",
-        ['crucial'] = "function: 0x7f806a2a8c80",
-        ['clog'] = "function: 0x7f806a2a89b0",
-        ['ldlog'] = "function: 0x7f806a2a8f40",
-      },
-      ['internal'] = {
-        ['internalPrefix'] = "",
-        ['functionPrefixes'] = {
-          [function: 0x7f806a2bda60] = {
-            ['fullStack'] = true,
-            ['prefix'] = "[SHARED]",
-          },
-          [function: 0x7f806c688018] = {
-            ['fullStack'] = false,
-            ['prefix'] = "[LUA]",
-            ['exclusive'] = true,
-          },
-          [function: 0x7f806a2aa468] = {
-            ['fullStack'] = true,
-            ['prefix'] = "[LOADFILE]",
-          },
-          [function: 0x7f806a29a200] = {
-            ['fullStack'] = false,
-            ['prefix'] = "[LUA]",
-            ['exclusive'] = true,
-          },
-          [function: 0x7f806a298950] = {
-            ['fullStack'] = true,
-            ['prefix'] = "[DB]",
-          },
-          [function: 0x7f806a2c9df0] = {
-            ['fullStack'] = true,
-            ['prefix'] = "",
-          },
-          [function: 0x7f806b0f91a0] = {
-            ['fullStack'] = true,
-            ['prefix'] = "[INIT]",
-          },
-          [function: 0x7f806a12aeb0] = {
-            ['fullStack'] = true,
-            ['prefix'] = "[USERLOGIN]",
-          },
-          [function: 0x7f806a2aa3f0] = {
-            ['fullStack'] = true,
-            ['prefix'] = "[REQUIRE]",
-          },
-          [function: 0x7f806a2c0970] = {
-            ['fullStack'] = true,
-            ['prefix'] = "[EVENT_API]",
-          },
-          [function: 0x7f806a2993b0] = {
-            ['fullStack'] = true,
-            ['prefix'] = "[DB]",
-          },
-        },
-        ['ioWriteBuffer'] = "",
-        ['logPrefix'] = "[MAIN]",
-        ['debugPrefix'] = "",
-      },
-      ['loadfileLog'] = "function: 0x7f806a2a9090",
-      ['clog'] = "function: 0x7f806a2a89b0",
-    },
-    ['cqueues'] = {
-      ['VERSION'] = 20200726,
-      ['poll'] = "function: 0x7f806a274b68",
-      ['_POLL'] = "userdata: 0x7f806a1a2ed0",
-      ['sleep'] = "function: 0x7f806a27b4c0",
-      ['cancel'] = "function: 0x7f806a273218",
-      ['reset'] = "function: 0x7f806a273268",
-      ['VENDOR'] = "quae@daurnimator.com",
-      ['interpose'] = "function: 0x7f806a273178",
-      ['loader'] = "function: 0x7f806a26f8e8",
-      ['create'] = "function: 0x7f806a2730d8",
-      ['type'] = "function: 0x7f806a273128",
-      ['monotime'] = "function: 0x7f806a2731c8",
-      ['new'] = "function: 0x7f806a27b300",
-      ['running'] = "function: 0x7f806a2732b8",
-    },
-    ['execCommand'] = "function: 0x7f806b100068",
-    ['stop'] = "function: 0x7f806c68e828",
-    ['ut'] = {
-      ['makeString'] = "function: 0x7f806a2acf78",
-      ['inputCheck'] = "function: 0x7f806a2acfa8",
-      ['getVersion'] = "function: 0x7f806a2ace40",
-      ['fillString'] = "function: 0x7f806a2acfd8",
-      ['version'] = "v0.8.8d",
-      ['seperatePath'] = "function: 0x7f806a2ace08",
-      ['tostring'] = "function: 0x7f806a2ad008",
-      ['readFile'] = "function: 0x7f806a2ad040",
-      ['parseArgs'] = "function: 0x7f806a2aceb0",
-      ['getChars'] = "function: 0x7f806a2acf48",
-      ['randomString'] = "function: 0x7f806a2ad070",
-    },
-    ['startFileThread'] = "function: 0x7f806b111af0",
-    ['sh'] = {
-      ['envSetup'] = "function: 0x7f806a2a3168",
-    },
-    ['returnError'] = "function: 0x7f8068f34f00",
-    ['isRunning'] = "function: 0x7f806a1237f0",
-    ['newFileThread'] = "function: 0x7f806a27c1b0",
-    ['loginRequired'] = "function: 0x7f806a270138",
-    ['keepAlive'] = "function: 0x7f806a2bbff0",
-    ['newSession'] = "function: 0x7f8068ff8f68",
-    ['getThreadInitCode'] = "function: 0x7f806a25ac88",
-    ['User'] = {
-      ['checkPasswd'] = "function: 0x7f806a2580b8",
-      ['getData'] = "function: 0x7f806a259288",
-      ['test'] = "function: 0x7f806a25c750",
-      ['exportObjectData'] = "function: 0x7f806a258080",
-      ['setPasswd'] = "function: 0x7f806a25bb78",
-      ['getIDByName'] = "function: 0x7f806a259bb8",
-      ['setName'] = "function: 0x7f806a25b5b0",
-      ['setPermission'] = "function: 0x7f806a25c1d8",
-      ['new'] = "function: 0x7f806a29b460",
-      ['create'] = "function: 0x7f806a258988",
-      ['getID'] = "function: 0x7f806a259668",
-      ['removePermission'] = "function: 0x7f806a25b060",
-      ['getPermission'] = "function: 0x7f806a25a570",
-      ['getName'] = "function: 0x7f806a259ff0",
-    },
-    ['execSite'] = "function: 0x7f8068f4acb8",
-    ['getSQLiteErrMsg'] = "function: 0x7f8068f2eee0",
-    ['getCookies'] = "function: 0x7f806a281770",
-    ['isDevMode'] = "function: 0x7f806a289690",
-    ['dl'] = {
-      ['executeDir'] = "function: 0x7f806a2b0cb0",
-      ['setEnv'] = "function: 0x7f806a2b0cf0",
-      ['loadDir'] = "function: 0x7f806b112aa0",
-      ['load'] = "function: 0x7f806a2b0b40",
-    },
-    ['getHeader'] = "function: 0x7f8068fee318",
-    ['getSession'] = "function: 0x7f806a263770",
-    ['getScriptFunc'] = "function: 0x7f8068f492b8",
-    ['html'] = {
-      ['code'] = {
-        ['success'] = "function: 0x7f806c68ae88",
-      },
-      ['Body'] = {
-        ['addHead'] = "function: 0x7f806a259258",
-        ['goBack'] = "function: 0x7f8068f4b0b8",
-        ['addHeader'] = "function: 0x7f8068fec9c8",
-        ['addRaw'] = "function: 0x7f806a25ce38",
-        ['addRefButton'] = "function: 0x7f806a27ec18",
-        ['addP'] = "function: 0x7f8068f4a810",
-        ['addGoBackButton'] = "function: 0x7f806a27ec48",
-        ['addLink'] = "function: 0x7f8068f4a840",
-        ['generateCode'] = "function: 0x7f8068f4b9e0",
-        ['addAction'] = "function: 0x7f806a27cdf8",
-        ['goTo'] = "function: 0x7f8068f4b088",
-        ['new'] = "function: 0x7f806a2597e0",
-        ['addToBody'] = "function: 0x7f806a25ce70",
-      },
-    },
-    ['hashPasswd'] = "function: 0x7f806a2b3198",
-    ['dump'] = "function: 0x7f806a138e08",
-    ['cookie'] = {
-      ['current'] = {
-      },
-      ['new'] = {
-      },
-    },
-    ['userDB'] = "sqlite database (0x7f806b0fab98)",
-    ['org'] = {
-      ['require'] = "function: 0x7f806c68ae00",
-      ['print'] = "function: 0x7f806b0fa710",
-      ['loadfile'] = "function: builtin#22",
-      ['io'] = {
-        ['flush'] = "function: builtin#111",
-        ['stdoutMetatable'] = {
-          ['write'] = "function: builtin#98",
-        },
-        ['write'] = "function: builtin#110",
-      },
-    },
-    ['shared'] = {
-    },
-    ['getThreadInfos'] = "function: 0x7f806c694678",
-    ['getInternal'] = "function: 0x7f806a29b748",
-    ['http'] = {
-      ['getAuthority'] = "function: 0x7f8068febea8",
-      ['getReferer'] = "function: 0x7f806a247bd8",
-    },
-    ['devConf'] = {
-      ['session'] = {
-        ['deleteExpiredSessions'] = true,
-        ['cleanupExpiredSessionsAtShutdown'] = true,
-      },
-      ['terminal'] = {
-        ['movieLikeDelay'] = 0.004,
-        ['commands'] = {
-          ['forceMainTerminal'] = "_MT",
-        },
-        ['movieLike'] = false,
-        ['keys'] = {
-          ['enter'] = 10,
-          ['autoComp'] = 9,
-        },
-      },
-      ['terminalPath'] = "core/lua/core/terminal/",
-      ['requirePath'] = "core/lua/libs/?.lua;core/lua/libs/thirdParty/?.lua;/home/noname/.luarocks/share/lua/5.1/?.lua",
-      ['preParsing'] = {
-        ['loadConfLine'] = true,
-        ['preparseScripts'] = true,
-      },
-      ['cRequirePath'] = "core/bin/libs/?.so;",
-      ['userDatabasePath'] = "users.sqlite3",
-      ['terminalSizeRefreshDelay'] = 1,
-      ['dataDatabasePath'] = "data.sqlite3",
-      ['dateFormat'] = "%X",
-      ['fallbacks'] = {
-        ['name'] = "DAMS API",
-      },
-      ['debug'] = {
-        ['logLevel'] = {
-          ['require'] = false,
-          ['lowLevelDebug'] = false,
-          ['threadDebug'] = false,
-          ['threadEnvInit'] = false,
-          ['eventDebug'] = false,
-          ['lowLevelEventDebug'] = false,
-          ['sharingDebug'] = false,
-          ['sharingThread'] = false,
-          ['plealTranspiling'] = false,
-          ['dataLoading'] = true,
-          ['dataExecution'] = true,
-          ['lowDataLoading'] = false,
-          ['lowDataExecution'] = false,
-          ['exec'] = false,
-          ['user'] = false,
-          ['dataDB'] = false,
-          ['debug'] = true,
-          ['loadfile'] = false,
-        },
-        ['logfile'] = "./logs/dams.log",
-        ['logDirectInput'] = false,
-        ['logInputEvent'] = false,
-        ['terminalColors'] = {
-          ['dlog'] = "[38;5;68m",
-          ['log'] = "[38;5;250m",
-          ['warn'] = "[38;5;178m",
-          ['err'] = "[38;5;160m",
-          ['crucial'] = "[48;5;52m",
-          ['default'] = "[38;5;250m",
-          ['fatal'] = "[48;5;88m[38;5;196m",
-        },
-      },
-      ['http'] = {
-        ['certPath'] = "cert/cert.pem",
-        ['privateKeyPath'] = "cert/privatekey.pem",
-        ['forceTLS'] = false,
-        ['startHTTPServer'] = true,
-        ['defaultRequestFormat'] = "lua-table",
-        ['defaultResponseFormat'] = "lua-table",
-      },
-      ['devMode'] = true,
-      ['sleepTime'] = 0.1,
-      ['sqlite'] = {
-        ['maxBusyTries'] = 10,
-        ['busyWaitTime'] = 0.5,
-      },
-      ['onReload'] = {
-        ['core'] = true,
-      },
-    },
-    ['execAction'] = "function: 0x7f806a24d9d0",
-    ['damsConf'] = {
-      ['mail'] = {
-      },
-      ['whitelist'] = {
-        ['test'] = "127.0.0.1",
-        ['GLOBAL'] = "1,2",
-      },
-      ['main'] = {
-        ['name'] = "DAMS v1 prev",
-      },
-    },
-    ['fs'] = {
-      ['currentdir'] = "function: 0x7f806a2abad0",
-      ['link'] = "function: 0x7f806a2abb08",
-      ['lock'] = "function: 0x7f806a2abb68",
-      ['mkdir'] = "function: 0x7f806a2abbc8",
-      ['rmdir'] = "function: 0x7f806a2abc28",
-      ['symlinkattributes'] = "function: 0x7f806a2abc98",
-      ['_VERSION'] = "LuaFileSystem 1.8.0",
-      ['dir'] = "function: 0x7f806a2aba30",
-      ['_DESCRIPTION'] = "LuaFileSystem is a Lua library developed to complement the set of functions related to file systems offered by the standard Lua distribution",
-      ['_COPYRIGHT'] = "Copyright (C) 2003-2017 Kepler Project",
-      ['lock_dir'] = "function: 0x7f806a2abdf8",
-      ['touch'] = "function: 0x7f806a2abd30",
-      ['setmode'] = "function: 0x7f806a2abcf8",
-      ['unlock'] = "function: 0x7f806a2abd90",
-      ['attributes'] = "function: 0x7f806a2ab9f8",
-      ['chdir'] = "function: 0x7f806a2aba68",
-    },
-    ['dataDB'] = "sqlite database (0x7f806b118d88)",
-    ['_G'] = {
-      ['sleep'] = "function: 0x7f806c6a48f0",
-      ['cts'] = "function: 0x7f806a2ad008",
-      ['call'] = "function: 0x7f806a2ac460",
-      ['execScript'] = "function: 0x7f8068f42c18",
-      ['gtest'] = "test",
-      ['exec'] = "function: 0x7f8068f40ea0",
-      ['osExec'] = "function: 0x7f8068f43f08",
-    },
-    ['Session'] = {
-      ['setDeletionTime'] = "function: 0x7f806a257408",
-      ['getSessionID'] = "function: 0x7f806a2572a0",
-      ['getUserID'] = "function: 0x7f806a257228",
-      ['getDescription'] = "function: 0x7f806a257300",
-      ['getExpireTime'] = "function: 0x7f806a257330",
-      ['setName'] = "function: 0x7f806a257360",
-      ['delete'] = "function: 0x7f806a257440",
-      ['create'] = "function: 0x7f806a257260",
-      ['setExpireTime'] = "function: 0x7f806a2573d0",
-      ['setNote'] = "function: 0x7f806a257398",
-      ['new'] = "function: 0x7f806a257178",
-      ['getName'] = "function: 0x7f806a2572d0",
-    },
-    ['lib'] = {
-      ['sqlite'] = "table: 0x7f806a23c830",
-      ['timer'] = "table: 0x7f806c6a46d8",
-      ['serialization'] = "table: 0x7f806a26d320",
-      ['thread'] = "table: 0x7f806c698030",
-      ['cqueues'] = "table: 0x7f806a272fc8",
-      ['fs'] = {
-        ['getIdentity'] = "function: 0x7f806c68fd30",
-        ['remove'] = "function: 0x7f806b100500",
-        ['read'] = "function: 0x7f806b100538",
-        ['write'] = "function: 0x7f806b100638",
-        ['lines'] = "function: 0x7f806b101198",
-        ['init'] = "function: 0x7f806c6a0510",
-        ['getSource'] = "function: 0x7f806c6896a0",
-        ['getExecutablePath'] = "function: 0x7f806c6a50e8",
-        ['unmount'] = "function: 0x7f806c6a3830",
-        ['setSource'] = "function: 0x7f806c689668",
-        ['getUserDirectory'] = "function: 0x7f806c6895c8",
-        ['getWorkingDirectory'] = "function: 0x7f806c689590",
-        ['getSaveDirectory'] = "function: 0x7f806c6a5e98",
-        ['getSourceBaseDirectory'] = "function: 0x7f806c6a3378",
-        ['createDirectory'] = "function: 0x7f806c6a5120",
-        ['load'] = "function: 0x7f806b1011d0",
-        ['setFused'] = "function: 0x7f806b102d80",
-        ['isFused'] = "function: 0x7f806b102db8",
-        ['areSymlinksEnabled'] = "function: 0x7f806b101c38",
-        ['newFileData'] = "function: 0x7f806b101ca8",
-        ['getRequirePath'] = "function: 0x7f806b102070",
-        ['setRequirePath'] = "function: 0x7f806b102570",
-        ['getCRequirePath'] = "function: 0x7f806b1025a8",
-        ['setCRequirePath'] = "function: 0x7f806b102bd0",
-        ['exists'] = "function: 0x7f806b102c38",
-        ['getRealDirectory'] = "function: 0x7f806c6a50b0",
-        ['isFile'] = "function: 0x7f806b103080",
-        ['isSymlink'] = "function: 0x7f806b103250",
-        ['getLastModified'] = "function: 0x7f806b1032b8",
-        ['setIdentity'] = "function: 0x7f806c68fcf8",
-        ['getInfo'] = "function: 0x7f806b101390",
-        ['getSize'] = "function: 0x7f806b100b80",
-        ['isDirectory'] = "function: 0x7f806b103018",
-        ['setSymlinksEnabled'] = "function: 0x7f806b1013c8",
-        ['getAppdataDirectory'] = "function: 0x7f806c6901c0",
-        ['newFile'] = "function: 0x7f806c6939f8",
-        ['mount'] = "function: 0x7f806c69c940",
-        ['append'] = "function: 0x7f806b100670",
-        ['getDirectoryItems'] = "function: 0x7f806b1006a8",
-        ['_setAndroidSaveExternal'] = "function: 0x7f806c6a0548",
-      },
-      ['lfs'] = "table: 0x7f806a2ab980",
-      ['ut'] = "table: 0x7f806a2acdc0",
-      ['json'] = {
-        ['_version'] = "0.1.2",
-        ['decode'] = "function: 0x7f806a24c218",
-        ['encode'] = "function: 0x7f806a24b888",
-      },
-      ['pleal'] = {
-        ['transpile'] = "function: 0x7f806a26da58",
-        ['getVersion'] = "function: 0x7f806b0f93b0",
-        ['transpileFile'] = "function: 0x7f806a2b4e38",
-        ['version'] = "0.8.2",
-        ['getLogFunctions'] = "function: 0x7f806a26d7a8",
-        ['getConfig'] = "function: 0x7f806a25d7e8",
-        ['setConfig'] = "function: 0x7f806a270310",
-        ['execute'] = "function: 0x7f806a2606f0",
-        ['setLogFunctions'] = "function: 0x7f806a2607f0",
-        ['executeFile'] = "function: 0x7f806a27bb68",
-      },
-      ['ini'] = {
-        ['save'] = "function: 0x7f806a242990",
-        ['load'] = "function: 0x7f806a242928",
-      },
-      ['argon2'] = {
-        ['_URL'] = "https://github.com/thibaultcha/lua-argon2",
-        ['variants'] = {
-          ['argon2_i'] = "userdata: 0x00000001",
-          ['argon2_d'] = "userdata: NULL",
-          ['argon2_id'] = "userdata: 0x00000002",
-        },
-        ['_VERSION'] = "3.0.1",
-        ['_LICENSE'] = "MIT",
-        ['_AUTHOR'] = "Thibault Charbonnier",
-        ['verify'] = "function: 0x7f806a23fe98",
-        ['hash_encoded'] = "function: 0x7f806a23ff38",
-        ['t_cost'] = "function: 0x7f806a23ffa8",
-        ['m_cost'] = "function: 0x7f806a240010",
-        ['parallelism'] = "function: 0x7f806a240078",
-        ['hash_len'] = "function: 0x7f806a240180",
-        ['variant'] = "function: 0x7f806a2401f0",
+[10:47:34][DEBUG][MAIN][ENV_INIT]: Load coreEnv    
+[10:47:34][DEBUG][MAIN][ENV_INIT]: Loading core libs    
+[10:47:34][DEBUG][MAIN][ENV_INIT]: Initialize the environment    
+[10:47:34][DEBUG][MAIN]: Execute core env init    
+[10:47:34][DATA_EXECUTION][MAIN][CORE_ENV_INI]: Prepare executeDir execution: coreEnvInit (core/lua/env/init)    
+[10:47:34][DATA_LOADING][MAIN][CORE_ENV_INI]: Loading dir: core/lua/env/init (coreEnvInit)    
+[10:47:34][DATA_LOADING][MAIN][CORE_ENV_INI]: Successfully loaded files: 13 (coreEnvInit)    
+[10:47:34][DATA_LOADING][MAIN][CORE_ENV_INI]: Loading dir done: core/lua/env/init (coreEnvInit)    
+[10:47:34][DATA_EXECUTION][MAIN][CORE_ENV_INI]: Execute: core/lua/env/init (coreEnvInit)    
+[10:47:34][DEBUG][MAIN][CORE_ENV_INI]: Loading libs    
+[10:47:34][INFO][MAIN][CORE_ENV_INI]: LOAD INI    
+[10:47:34][DEBUG][MAIN][CORE_ENV_INI][SHARED]: Set metatables    
+[10:47:34][INFO][MAIN][CORE_ENV_INI]: Open user DB    
+[10:47:34][DATA_EXECUTION][MAIN][CORE_ENV_INI]: Successfully executed: 13 files (coreEnvInit)    
+[10:47:34][DATA_EXECUTION][MAIN][CORE_ENV_INI]: Executing done: coreEnvInit (core/lua/env/init)    
+[10:47:34][DEBUG][MAIN][CORE_ENV_INI]: Execute API env init    
+[10:47:34][DATA_EXECUTION][MAIN][API_ENV_INI]: Prepare executeDir execution: apiEnvInit (api/env/init)    
+[10:47:34][DATA_LOADING][MAIN][API_ENV_INI]: Loading dir: api/env/init (apiEnvInit)    
+[10:47:34][DATA_LOADING][MAIN][API_ENV_INI]: Successfully loaded files: 0 (apiEnvInit)    
+[10:47:34][DATA_LOADING][MAIN][API_ENV_INI]: Loading dir done: api/env/init (apiEnvInit)    
+[10:47:34][DATA_EXECUTION][MAIN][API_ENV_INI]: Execute: api/env/init (apiEnvInit)    
+[10:47:34][DATA_EXECUTION][MAIN][API_ENV_INI]: Successfully executed: 0 files (apiEnvInit)    
+[10:47:34][DATA_EXECUTION][MAIN][API_ENV_INI]: Executing done: apiEnvInit (api/env/init)    
+[10:47:34][DEBUG][MAIN][CORE_ENV_DYN]: Load dynamic core data    
+[10:47:34][DATA_LOADING][MAIN][CORE_ENV_DYN]: Loading dir: core/lua/env/dyn (coreDyn)    
+[10:47:34][DATA_LOADING][MAIN][CORE_ENV_DYN]: Successfully loaded files: 57 (coreDyn)    
+[10:47:34][DATA_LOADING][MAIN][CORE_ENV_DYN]: Loading dir done: core/lua/env/dyn (coreDyn)    
+[10:47:34][DEBUG][MAIN][API_ENV_DYN]: Load dynamic API data    
+[10:47:34][DATA_LOADING][MAIN][API_ENV_DYN]: Loading dir: api/env/dyn (apiDyn)    
+[10:47:34][DATA_LOADING][MAIN][API_ENV_DYN]: Successfully loaded files: 6 (apiDyn)    
+[10:47:34][DATA_LOADING][MAIN][API_ENV_DYN]: Loading dir done: api/env/dyn (apiDyn)    
+[10:47:34][DEBUG][MAIN][API_COMMANDS]: Load commands    
+[10:47:34][DATA_LOADING][MAIN][API_COMMANDS]: Loading dir: api/commands (commands)    
+[10:47:34][DATA_LOADING][MAIN][API_COMMANDS]: Successfully loaded files: 23 (commands)    
+[10:47:34][DATA_LOADING][MAIN][API_COMMANDS]: Loading dir done: api/commands (commands)    
+[10:47:34][INFO][MAIN]: Start initialization    
+[10:47:34][DEBUG][MAIN][INIT]: Initialize main env    
+[10:47:34][DEBUG][MAIN][INIT]: Initialize terminal    
+[10:47:34][INFO][MAIN][INIT]: Initialize core    
+[10:47:34][DATA_EXECUTION][MAIN][INIT]: Prepare executeDir execution: INIT_SYSTEM (core/lua/core/init)    
+[10:47:34][DATA_LOADING][MAIN][INIT]: Loading dir: core/lua/core/init (INIT_SYSTEM)    
+[10:47:34][DATA_LOADING][MAIN][INIT]: Successfully loaded files: 6 (INIT_SYSTEM)    
+[10:47:34][DATA_LOADING][MAIN][INIT]: Loading dir done: core/lua/core/init (INIT_SYSTEM)    
+[10:47:34][DATA_EXECUTION][MAIN][INIT]: Execute: core/lua/core/init (INIT_SYSTEM)    
+[10:47:34][DEBUG][MAIN][INIT]: Starting event manager    
+[10:47:34][DEBUG][MAIN][INIT]: Starting sharing manager    
+[10:47:34][DEBUG][MAIN][INIT]: Starting event manager    
+[10:47:34][DEBUG][MAIN][INIT]: Starting event listener    
+[10:47:34][DEBUG][MAIN][INIT][DB]: Prepare login DB    
+[10:47:34][DEBUG][MAIN][INIT][DB]: Create sysinfo table: 1    
+[10:47:34][DEBUG][MAIN][INIT][DB]: Create users table: 1    
+[10:47:34][DEBUG][MAIN][INIT][DB]: Create permissions table: 1    
+[10:47:34][DEBUG][MAIN][INIT][DB]: Create sessions table: 1    
+[10:47:34][DEBUG][MAIN][INIT][DB]: Prepare sysinfo table: 0    
+[10:47:34][INFO][MAIN][INIT][USERLOGIN]: Initialize user login env    
+[10:47:34][INFO][MAIN][INIT][DB]: Prepare data DB    
+[10:47:34][INFO][MAIN][INIT][DB]: Create data table: 0    
+[10:47:34][DATA_EXECUTION][MAIN][INIT]: Successfully executed: 6 files (INIT_SYSTEM)    
+[10:47:34][DATA_EXECUTION][MAIN][INIT]: Executing done: INIT_SYSTEM (core/lua/core/init)    
+[10:47:34][INFO][MAIN][INIT]: Initialize api    
+[10:47:34][DATA_EXECUTION][MAIN][INIT]: Prepare executeDir execution: INIT_USER (api/init)    
+[10:47:34][DATA_LOADING][MAIN][INIT]: Loading dir: api/init (INIT_USER)    
+[10:47:34][DATA_LOADING][MAIN][INIT]: Successfully loaded files: 2 (INIT_USER)    
+[10:47:34][DATA_LOADING][MAIN][INIT]: Loading dir done: api/init (INIT_USER)    
+[10:47:34][DATA_EXECUTION][MAIN][INIT]: Execute: api/init (INIT_USER)    
+[10:47:34][INFO][MAIN][INIT]: ######################################    
+[10:47:34][DATA_EXECUTION][MAIN][INIT]: Successfully executed: 2 files (INIT_USER)    
+[10:47:34][DATA_EXECUTION][MAIN][INIT]: Executing done: INIT_USER (api/init)    
+[10:47:34][INFO][MAIN][INIT]: Initialization done    
+[10:47:34][INFO][SHARING_MANAGER]: Starting sharing manager  	  
+[10:47:34][INFO][EVENT_LISTENER]: Starting event listener  	  
+[10:47:34][INFO][EVENT_LISTENER]: Register all listeners  	  
+[10:47:34][INFO][EVENT_LISTENER]: Listeners registration done  	  
+[10:47:34][INFO][EVENT_MANAGER]: Starting event manager  	  
+[10:47:34][INFO][THREAD_MANAGER]: Starting thread manager  	  
+[10:47:34][INFO][HTTPServer]: Initialize HTTP server  	  
+[10:47:34][INFO][HTTPServer]: No TLS certificate given. Falling back to self-signed certificate.  	  
+[10:47:34][INFO][HTTPServer]: Create server object  	  
+[10:47:34][INFO][HTTPServer]: Set server to listen  	  
+[10:47:34][INFO][HTTPServer]: Set event listeners  	  
+[10:47:34][INFO][HTTPServer]: Now listening on port 8023  	  
+[10:47:34][INFO][HTTPServer]: HTTP server initialization done  	  
+[10:47:38][INFO][HTTPServer]: Got user request: connectionIP/realIP: 127.0.0.1/127.0.0.1  	  
+[10:47:38][INFO][ACTION][YoutubeDL]: Register download for user 1  	  
+[10:47:38][INFO][ACTION][YoutubeDL]: Register new youtubedl user: 'test' (1)  	  
+[10:47:38][INFO][ACTION][YoutubeDL]: Download registered: userID: 1, URL: TEST_URI, interval: 10  	  
+[10:47:46][INFO][HTTPServer]: Got user request: connectionIP/realIP: 127.0.0.1/127.0.0.1  	  
+[10:47:46][INFO][ACTION][YoutubeDL]: Register download for user 1  	  
+[10:47:46][INFO][ACTION][YoutubeDL]: Download registered: userID: 1, URL: TEST_URI, interval: 10  	  
+[10:47:49][INFO][HTTPServer]: Got user request: connectionIP/realIP: 127.0.0.1/127.0.0.1  	  
+[10:47:49][INFO][ACTION][TEST]: Schedule new download: downloadID: 2  	  
+[10:47:49][INFO][ACTION][TEST]: Schedule download: downloadID: 2, scheduleDay: 19498  	  
+[10:47:51][MAIN_TERMINAL]: > lua    
+[10:47:51][MAIN_TERMINAL]: true    
+[10:47:57][LUA]: > _DB.youtubedl("dump")    
+[10:47:57][DEBUG][LUA]: {
+  ['users'] = {
+    [1] = {
+      ['downloads'] = {
+        [1] = true,
+        [2] = true,
       },
     },
   },
-  ['_DB'] = {
+  ['downloads'] = {
+    ['lastDownloadDay'] = 19488,
+    ['queued'] = {
+    },
+    ['scheduled'] = {
+      [19498] = {
+        [2] = true,
+      },
+    },
+    ['registered'] = {
+      [1] = {
+        ['userID'] = 1,
+        ['log'] = {
+        },
+        ['url'] = "TEST_URI",
+        ['interval'] = 10,
+      },
+      [2] = {
+        ['currentScheduleDay'] = 19498,
+        ['userID'] = 1,
+        ['log'] = {
+        },
+        ['url'] = "TEST_URI",
+        ['interval'] = 10,
+      },
+    },
   },
-  ['_S'] = "sharing_table",
-}	    
-[15:02:20][LUA]: >     
-[15:02:21][LUA]: >     
-[15:02:21][LUA]: >     
-[15:02:21][LUA]: >     
-[15:02:21][LUA]: >     
-[15:02:21][LUA]: >     
-[15:02:21][LUA]: >     
-[15:02:33][LUA]: > for i, v in pairs(_M) do print(i, v) end    
-_E  table: 0x7f806b0fa248  
-_I  table: 0x7f806b0f96e0  
-_DB  dbHandler: (root)  
-_S  sharing_table  
-[15:02:46][LUA]: > for i, v in pairs(_M._I) do print(i, v) end    
-terminal  table: 0x7f806a283b20  
-dynDup  CORE  
-mail  function: 0x7f8068f4a968  
-userScripts  table: 0x7f8068f45c60  
-thread  table: 0x7f806c698030  
-initData  table: 0x7f806b0f9210  
-args  table: 0x7f806a2db6b8  
-appendIndex  function: 0x7f806a2acd90  
-mainThread  true  
-getSessionByRequestData  function: 0x7f806a256a50  
-damsVersion  1.0-prerelease-45  
-commands  table: 0x7f806a2676c0  
-event  table: 0x7f806a2d13a0  
-verifyPasswd  function: 0x7f806c6a2910  
-sqlite  table: 0x7f806a23c830  
-timer  table: 0x7f806c6a46d8  
-tostring  function: 0x7f806a2ad008  
-threadIsRunning  function: 0x7f806a257988  
-stopProgram  function: 0x7f806a259f98  
-serialization  table: 0x7f806a26d320  
-debug  table: 0x7f806b10f640  
-cqueues  table: 0x7f806a272fc8  
-execCommand  function: 0x7f806b100068  
-stop  function: 0x7f806c68e828  
-ut  table: 0x7f806a2acdc0  
-startFileThread  function: 0x7f806b111af0  
-sh  table: 0x7f806a24fb90  
-returnError  function: 0x7f8068f34f00  
-isRunning  function: 0x7f806a1237f0  
-newFileThread  function: 0x7f806a27c1b0  
-loginRequired  function: 0x7f806a270138  
-keepAlive  function: 0x7f806a2bbff0  
-newSession  function: 0x7f8068ff8f68  
-getThreadInitCode  function: 0x7f806a25ac88  
-User  table: 0x7f806a257630  
-execSite  function: 0x7f8068f4acb8  
-getSQLiteErrMsg  function: 0x7f8068f2eee0  
-getCookies  function: 0x7f806a281770  
-isDevMode  function: 0x7f806a289690  
-dl  table: 0x7f806a2b0a18  
-getHeader  function: 0x7f8068fee318  
-getSession  function: 0x7f806a263770  
-getScriptFunc  function: 0x7f8068f492b8  
-html  table: 0x7f806a256138  
-hashPasswd  function: 0x7f806a2b3198  
-dump  function: 0x7f806a138e08  
-cookie  table: 0x7f806a29b5e0  
-userDB  sqlite database (0x7f806b0fab98)  
-org  table: 0x7f806a2aa068  
-shared  sharing_table  
-getThreadInfos  function: 0x7f806c694678  
-getInternal  function: 0x7f806a29b748  
-http  table: 0x7f806a2b7598  
-devConf  table: 0x7f806b11d7b8  
-execAction  function: 0x7f806a24d9d0  
-damsConf  table: 0x7f806a2e1eb8  
-fs  table: 0x7f806a2ab980  
-dataDB  sqlite database (0x7f806b118d88)  
-_G  table: 0x7f806a25c908  
-Session  table: 0x7f806a257130  
-lib  table: 0x7f806a25d300  
-[15:03:01][LUA]: > _M._I.damsVersion    
-[15:03:01][LUA]: 1.0-prerelease-45	    
-[15:03:14][INFO][MAIN]: SHUTTING DOWN    
-[15:03:14][DATA_EXECUTION][MAIN]: Prepare executeDir execution: SHUTDOWN (core/lua/core/shutdown)    
-[15:03:14][DATA_LOADING][MAIN]: Loading dir: core/lua/core/shutdown (SHUTDOWN)    
-[15:03:14][DATA_LOADING][MAIN]: Successfully loaded files: 2 (SHUTDOWN)    
-[15:03:14][DATA_LOADING][MAIN]: Loading dir done: core/lua/core/shutdown (SHUTDOWN)    
-[15:03:14][DATA_EXECUTION][MAIN]: Execute: core/lua/core/shutdown (SHUTDOWN)    
-[15:03:14][INFO][MAIN]: Cleanup expired sessions    
-[15:03:14][INFO][MAIN]: 0    
-[15:03:14][INFO][MAIN]: Close login DB    
-[15:03:14][DATA_EXECUTION][MAIN]: Successfully executed: 2 files (SHUTDOWN)    
-[15:03:14][DATA_EXECUTION][MAIN]: Executing done: SHUTDOWN (core/lua/core/shutdown)    
+}    
+[10:48:13][INFO][HTTPServer]: Got user request: connectionIP/realIP: 127.0.0.1/127.0.0.1  	  
+[10:48:13][INFO][ACTION][TEST]: Schedule new download: downloadID: 2  	  
+[10:48:13][INFO][ACTION][TEST]: Cleaning up ond download registration: downloadID: 2, oldScheduleDay: 19498  	  
+[10:48:13][INFO][ACTION][TEST]: Schedule download: downloadID: 2, scheduleDay: 19499  	  
+[10:48:13][LUA]: > _DB.youtubedl("dump")    
+[10:48:13][DEBUG][LUA]: {
+  ['users'] = {
+    [1] = {
+      ['downloads'] = {
+        [1] = true,
+        [2] = true,
+      },
+    },
+  },
+  ['downloads'] = {
+    ['lastDownloadDay'] = 19488,
+    ['queued'] = {
+    },
+    ['scheduled'] = {
+      [19499] = {
+        [2] = true,
+      },
+      [19498] = {
+      },
+    },
+    ['registered'] = {
+      [1] = {
+        ['userID'] = 1,
+        ['log'] = {
+        },
+        ['url'] = "TEST_URI",
+        ['interval'] = 10,
+      },
+      [2] = {
+        ['currentScheduleDay'] = 19499,
+        ['userID'] = 1,
+        ['log'] = {
+        },
+        ['url'] = "TEST_URI",
+        ['interval'] = 10,
+      },
+    },
+  },
+}    
+[10:48:23][INFO][HTTPServer]: Got user request: connectionIP/realIP: 127.0.0.1/127.0.0.1  	  
+[10:48:23][INFO][ACTION][TEST]: Schedule new download: downloadID: 2  	  
+[10:48:23][INFO][ACTION][TEST]: Cleaning up ond download registration: downloadID: 2, oldScheduleDay: 19499  	  
+[10:48:23][INFO][ACTION][TEST]: Schedule download: downloadID: 2, scheduleDay: 19498  	  
+[10:48:26][LUA]: > _DB.youtubedl("dump")    
+[10:48:26][DEBUG][LUA]: {
+  ['users'] = {
+    [1] = {
+      ['downloads'] = {
+        [1] = true,
+        [2] = true,
+      },
+    },
+  },
+  ['downloads'] = {
+    ['lastDownloadDay'] = 19488,
+    ['queued'] = {
+    },
+    ['scheduled'] = {
+      [19499] = {
+      },
+      [19498] = {
+        [2] = true,
+      },
+    },
+    ['registered'] = {
+      [1] = {
+        ['userID'] = 1,
+        ['log'] = {
+        },
+        ['url'] = "TEST_URI",
+        ['interval'] = 10,
+      },
+      [2] = {
+        ['currentScheduleDay'] = 19498,
+        ['userID'] = 1,
+        ['log'] = {
+        },
+        ['url'] = "TEST_URI",
+        ['interval'] = 10,
+      },
+    },
+  },
+}    
+[10:48:27][INFO][HTTPServer]: Got user request: connectionIP/realIP: 127.0.0.1/127.0.0.1  	  
+[10:48:27][INFO][ACTION][TEST]: Schedule new download: downloadID: 2  	  
+[10:48:27][INFO][ACTION][TEST]: Download already scheduled at that day: downloadID: 2, scheduleID: 19498  	  
+[10:48:33][INFO][HTTPServer]: Got user request: connectionIP/realIP: 127.0.0.1/127.0.0.1  	  
+[10:48:33][INFO][ACTION][TEST]: Schedule new download: downloadID: 2  	  
+[10:48:33][INFO][ACTION][TEST]: Cleaning up ond download registration: downloadID: 2, oldScheduleDay: 19498  	  
+[10:48:33][INFO][ACTION][TEST]: Schedule download: downloadID: 2, scheduleDay: 19499  	  
+[10:48:34][LUA]: > _DB.youtubedl("dump")    
+[10:48:34][DEBUG][LUA]: {
+  ['users'] = {
+    [1] = {
+      ['downloads'] = {
+        [1] = true,
+        [2] = true,
+      },
+    },
+  },
+  ['downloads'] = {
+    ['lastDownloadDay'] = 19488,
+    ['queued'] = {
+    },
+    ['scheduled'] = {
+      [19499] = {
+        [2] = true,
+      },
+      [19498] = {
+      },
+    },
+    ['registered'] = {
+      [1] = {
+        ['userID'] = 1,
+        ['log'] = {
+        },
+        ['url'] = "TEST_URI",
+        ['interval'] = 10,
+      },
+      [2] = {
+        ['currentScheduleDay'] = 19499,
+        ['userID'] = 1,
+        ['log'] = {
+        },
+        ['url'] = "TEST_URI",
+        ['interval'] = 10,
+      },
+    },
+  },
+}    
+[10:48:41][INFO][HTTPServer]: Got user request: connectionIP/realIP: 127.0.0.1/127.0.0.1  	  
+[10:48:41][INFO][ACTION][YoutubeDL]: Register download for user 1  	  
+[10:48:41][INFO][ACTION][YoutubeDL]: Download registered: userID: 1, URL: TEST_URI, interval: 10  	  
+[10:48:41][LUA]: > _DB.youtubedl("dump")    
+[10:48:41][DEBUG][LUA]: {
+  ['users'] = {
+    [1] = {
+      ['downloads'] = {
+        [1] = true,
+        [2] = true,
+        [3] = true,
+      },
+    },
+  },
+  ['downloads'] = {
+    ['lastDownloadDay'] = 19488,
+    ['queued'] = {
+    },
+    ['scheduled'] = {
+      [19499] = {
+        [2] = true,
+      },
+      [19498] = {
+      },
+    },
+    ['registered'] = {
+      [1] = {
+        ['userID'] = 1,
+        ['log'] = {
+        },
+        ['url'] = "TEST_URI",
+        ['interval'] = 10,
+      },
+      [2] = {
+        ['currentScheduleDay'] = 19499,
+        ['userID'] = 1,
+        ['log'] = {
+        },
+        ['url'] = "TEST_URI",
+        ['interval'] = 10,
+      },
+      [3] = {
+        ['userID'] = 1,
+        ['log'] = {
+        },
+        ['url'] = "TEST_URI",
+        ['interval'] = 10,
+      },
+    },
+  },
+}    
+[10:48:49][INFO][HTTPServer]: Got user request: connectionIP/realIP: 127.0.0.1/127.0.0.1  	  
+[10:48:49][INFO][ACTION][YoutubeDL]: Register download for user 1  	  
+[10:48:49][INFO][ACTION][YoutubeDL]: Download registered: userID: 1, URL: TEST_URI, interval: 10  	  
+[10:48:49][LUA]: > _DB.youtubedl("dump")    
+[10:48:49][DEBUG][LUA]: {
+  ['users'] = {
+    [1] = {
+      ['downloads'] = {
+        [1] = true,
+        [2] = true,
+        [3] = true,
+        [4] = true,
+      },
+    },
+  },
+  ['downloads'] = {
+    ['lastDownloadDay'] = 19488,
+    ['queued'] = {
+    },
+    ['scheduled'] = {
+      [19499] = {
+        [2] = true,
+      },
+      [19498] = {
+      },
+    },
+    ['registered'] = {
+      [1] = {
+        ['userID'] = 1,
+        ['log'] = {
+        },
+        ['url'] = "TEST_URI",
+        ['interval'] = 10,
+      },
+      [2] = {
+        ['currentScheduleDay'] = 19499,
+        ['userID'] = 1,
+        ['log'] = {
+        },
+        ['url'] = "TEST_URI",
+        ['interval'] = 10,
+      },
+      [3] = {
+        ['userID'] = 1,
+        ['log'] = {
+        },
+        ['url'] = "TEST_URI",
+        ['interval'] = 10,
+      },
+      [4] = {
+        ['userID'] = 1,
+        ['log'] = {
+        },
+        ['url'] = "TEST_URI",
+        ['interval'] = 10,
+      },
+    },
+  },
+}    
+[10:49:08][LUA]: > _DB.youtubedl.downloads.registered[3] = nil    
+[10:49:13][LUA]: > _DB.youtubedl.downloads.registered[4] = nil    
+[10:49:16][LUA]: > _DB.youtubedl("dump")    
+[10:49:16][DEBUG][LUA]: {
+  ['users'] = {
+    [1] = {
+      ['downloads'] = {
+        [1] = true,
+        [2] = true,
+        [3] = true,
+        [4] = true,
+      },
+    },
+  },
+  ['downloads'] = {
+    ['lastDownloadDay'] = 19488,
+    ['queued'] = {
+    },
+    ['scheduled'] = {
+      [19499] = {
+        [2] = true,
+      },
+      [19498] = {
+      },
+    },
+    ['registered'] = {
+      [1] = {
+        ['userID'] = 1,
+        ['log'] = {
+        },
+        ['url'] = "TEST_URI",
+        ['interval'] = 10,
+      },
+      [2] = {
+        ['currentScheduleDay'] = 19499,
+        ['userID'] = 1,
+        ['log'] = {
+        },
+        ['url'] = "TEST_URI",
+        ['interval'] = 10,
+      },
+    },
+  },
+}    
+[10:49:18][INFO][HTTPServer]: Got user request: connectionIP/realIP: 127.0.0.1/127.0.0.1  	  
+[10:49:18][INFO][ACTION][TEST]: Schedule new download: downloadID: 1  	  
+[10:49:18][INFO][ACTION][TEST]: Schedule download: downloadID: 1, scheduleDay: 19498  	  
+[10:49:19][LUA]: > _DB.youtubedl("dump")    
+[10:49:19][DEBUG][LUA]: {
+  ['users'] = {
+    [1] = {
+      ['downloads'] = {
+        [1] = true,
+        [2] = true,
+        [3] = true,
+        [4] = true,
+      },
+    },
+  },
+  ['downloads'] = {
+    ['lastDownloadDay'] = 19488,
+    ['queued'] = {
+    },
+    ['scheduled'] = {
+      [19499] = {
+        [2] = true,
+      },
+      [19498] = {
+        [1] = true,
+      },
+    },
+    ['registered'] = {
+      [1] = {
+        ['currentScheduleDay'] = 19498,
+        ['userID'] = 1,
+        ['log'] = {
+        },
+        ['url'] = "TEST_URI",
+        ['interval'] = 10,
+      },
+      [2] = {
+        ['currentScheduleDay'] = 19499,
+        ['userID'] = 1,
+        ['log'] = {
+        },
+        ['url'] = "TEST_URI",
+        ['interval'] = 10,
+      },
+    },
+  },
+}    
+[10:49:22][INFO][HTTPServer]: Got user request: connectionIP/realIP: 127.0.0.1/127.0.0.1  	  
+[10:49:22][INFO][ACTION][TEST]: Schedule new download: downloadID: 1  	  
+[10:49:22][INFO][ACTION][TEST]: Download already scheduled at that day: downloadID: 1, scheduleID: 19498  	  
+[10:49:23][LUA]: > _DB.youtubedl("dump")    
+[10:49:23][DEBUG][LUA]: {
+  ['users'] = {
+    [1] = {
+      ['downloads'] = {
+        [1] = true,
+        [2] = true,
+        [3] = true,
+        [4] = true,
+      },
+    },
+  },
+  ['downloads'] = {
+    ['lastDownloadDay'] = 19488,
+    ['queued'] = {
+    },
+    ['scheduled'] = {
+      [19499] = {
+        [2] = true,
+      },
+      [19498] = {
+        [1] = true,
+      },
+    },
+    ['registered'] = {
+      [1] = {
+        ['currentScheduleDay'] = 19498,
+        ['userID'] = 1,
+        ['log'] = {
+        },
+        ['url'] = "TEST_URI",
+        ['interval'] = 10,
+      },
+      [2] = {
+        ['currentScheduleDay'] = 19499,
+        ['userID'] = 1,
+        ['log'] = {
+        },
+        ['url'] = "TEST_URI",
+        ['interval'] = 10,
+      },
+    },
+  },
+}    
+[10:55:52][INFO][MAIN]: SHUTTING DOWN    
+[10:55:52][DATA_EXECUTION][MAIN]: Prepare executeDir execution: SHUTDOWN (core/lua/core/shutdown)    
+[10:55:52][DATA_LOADING][MAIN]: Loading dir: core/lua/core/shutdown (SHUTDOWN)    
+[10:55:52][DATA_LOADING][MAIN]: Successfully loaded files: 2 (SHUTDOWN)    
+[10:55:52][DATA_LOADING][MAIN]: Loading dir done: core/lua/core/shutdown (SHUTDOWN)    
+[10:55:52][DATA_EXECUTION][MAIN]: Execute: core/lua/core/shutdown (SHUTDOWN)    
+[10:55:52][INFO][MAIN]: Cleanup expired sessions    
+[10:55:52][INFO][MAIN]: 0    
+[10:55:52][INFO][MAIN]: Close login DB    
+[10:55:52][DATA_EXECUTION][MAIN]: Successfully executed: 2 files (SHUTDOWN)    
+[10:55:52][DATA_EXECUTION][MAIN]: Executing done: SHUTDOWN (core/lua/core/shutdown)    

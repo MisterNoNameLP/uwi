@@ -1,0 +1,22 @@
+return function(id)
+	log("Schedule new download: downloadID: $id")
+	local registrationData = _DB.youtubedl.downloads.registered[id]
+	local newScheduleDay = _M._E.getDay() + registrationData.interval 
+
+	if registrationData.currentScheduleDay == newScheduleDay then
+		log("Download already scheduled at that day: downloadID: $id, scheduleID: $registrationData.currentScheduleDay")
+		return false, "Already scheduled at that day"
+	elseif registrationData.currentScheduleDay then
+		log("Cleaning up ond download registration: downloadID: $id, oldScheduleDay: $registrationData.currentScheduleDay")
+		_DB.youtubedl.downloads.scheduled[registrationData.currentScheduleDay][id] = nil
+	end
+
+	log("Schedule download: downloadID: $id, scheduleDay: $newScheduleDay")
+	if not _DB.youtubedl.downloads.scheduled[newScheduleDay] then
+		_DB.youtubedl.downloads.scheduled[newScheduleDay] = {}
+	end
+	_DB.youtubedl.downloads.scheduled[newScheduleDay][id] = true
+	registrationData.currentScheduleDay = newScheduleDay
+
+	return true
+end
