@@ -4,7 +4,7 @@ return function(user, force)
 	else
 		local userID = user:getID()
 		local username = user:getName()
-		log("Register new youtubedl user: '$username' ($userID)")
+		log("Register new youtubedl user: '$username' (${userID})")
 		_DB.youtubedl.users[userID] = {
 			downloads = {}
 		}
