@@ -1,3 +1,4 @@
 debug.setFuncPrefix("[TEST]")
 
-_E.youtubedl.scheduleDownload(1)
+--_I.startAPIThread("test.lua", "TEST")
+_I.event.push("TEST")

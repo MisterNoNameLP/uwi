@@ -1,6 +1,10 @@
 local count = 0
 
-_M._I.event.listen("PULL_BACKUP", function(args)
-    log("Pull: c: " .. tostring(count))
+print("################################################")
+
+_M._I.event.listen("TEST", function(args)
+    log("TEST: c: " .. tostring(count))
     count = count +1
 end)
+
+_I.keepAlive(true)

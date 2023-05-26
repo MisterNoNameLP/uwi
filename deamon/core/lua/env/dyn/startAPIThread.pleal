@@ -1,0 +1,3 @@
+return function(file, name, args)
+	_M._I.startFileThread("api/threads/$file", name, args)
+end
