@@ -19,6 +19,9 @@ _E.youtubedl.registerUser(user)
 response.downloadList = {}
 
 for id in pairs(_DB.youtubedl.users[userID].downloads("get")) do
+
+	dlog(id)
+
 	local downloadInfo = {}
 	local fullDownloadInfo = _DB.youtubedl.downloads.registered[id]("get")
 	downloadInfo.url = fullDownloadInfo.url
